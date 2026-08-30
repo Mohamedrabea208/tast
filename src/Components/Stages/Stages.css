@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+}
+
+.stages-page {
+  direction: rtl;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 70px 6%;
+  background: #f8fafc;
+}
+
+/* =========================
+   Header
+========================= */
+
+.stages-header {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.stages-header > span {
+  display: inline-block;
+  padding: 9px 18px;
+
+  color: #2563eb;
+  background: #dbeafe;
+
+  border-radius: 30px;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.stages-header h1 {
+  margin: 18px 0 12px;
+
+  color: #0f172a;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.stages-header p {
+  margin: 0;
+
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+/* =========================
+   Cards Container
+========================= */
+
+.stages-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+/* =========================
+   Card
+========================= */
+
+.stage-card {
+  width: 100%;
+  min-width: 0;
+
+  padding: 35px 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.stage-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #bfdbfe;
+
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+/* =========================
+   Icon
+========================= */
+
+.stage-icon {
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+
+  font-size: 45px;
+}
+
+.stage-card.green .stage-icon {
+  background: #dcfce7;
+}
+
+.stage-card.blue .stage-icon {
+  background: #dbeafe;
+}
+
+.stage-card.purple .stage-icon {
+  background: #f3e8ff;
+}
+
+/* =========================
+   Title
+========================= */
+
+.stage-card h2 {
+  margin: 0 0 15px;
+
+  color: #0f172a;
+
+  font-size: 23px;
+  font-weight: 800;
+}
+
+/* =========================
+   Description
+========================= */
+
+.stage-card p {
+  min-height: 80px;
+    display: inline-block;
+  margin: 0 0 25px;
+
+  color: #64748b;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================
+   Button
+========================= */
+
+.stage-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 20px;
+
+  color: #ffffff;
+
+  border-radius: 11px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.stage-card.green .stage-button {
+  background: #16a34a;
+}
+
+.stage-card.blue .stage-button {
+  background: #2563eb;
+}
+
+.stage-card.purple .stage-button {
+  background: #9333ea;
+}
+
+.stage-button:hover {
+  opacity: 0.9;
+}
+
+.stage-button span {
+  transition: transform 0.3s ease;
+}
+
+.stage-button:hover span {
+  transform: translateX(-5px);
+}
+
+/* =========================
+   Info Section
+========================= */
+
+.stages-info {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 55px auto 0;
+  padding: 25px 30px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+}
+
+.info-icon {
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fef3c7;
+
+  border-radius: 15px;
+
+  font-size: 28px;
+}
+
+.stages-info h3 {
+  margin: 0 0 5px;
+
+  color: #0f172a;
+
+  font-size: 18px;
+}
+
+.stages-info p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   Laptop / Tablet
+========================= */
+
+@media (max-width: 1000px) {
+  .stages-page {
+    padding: 60px 4%;
+  }
+
+  .stages-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 650px) {
+  .stages-page {
+    padding: 45px 20px;
+  }
+
+  .stages-header {
+    margin-bottom: 40px;
+  }
+
+  .stages-header h1 {
+    font-size: 32px;
+  }
+
+  .stages-header p {
+    font-size: 15px;
+  }
+
+  .stages-container {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    max-width: 500px;
+  }
+
+  .stage-card {
+    padding: 30px 25px;
+  }
+
+  .stage-card p {
+    min-height: auto;
+  }
+
+  .stages-info {
+    align-items: flex-start;
+
+    padding: 20px;
+
+    margin-top: 35px;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 400px) {
+  .stages-page {
+    padding: 40px 15px;
+  }
+
+  .stages-header h1 {
+    font-size: 28px;
+  }
+
+  .stage-card {
+    padding: 25px 20px;
+  }
+
+  .stage-icon {
+    width: 75px;
+    height: 75px;
+
+    font-size: 38px;
+  }
+}

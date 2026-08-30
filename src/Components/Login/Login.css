@@ -1,0 +1,193 @@
+.login-page {
+  direction: rtl;
+
+  min-height: calc(100vh - 80px);
+
+  padding: 50px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8fafc;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 38px 35px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 22px;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+.login-logo {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dbeafe;
+
+  border-radius: 18px;
+
+  font-size: 32px;
+}
+
+.login-card h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  text-align: center;
+
+  font-size: 28px;
+}
+
+.login-subtitle {
+  margin: 8px 0 25px;
+
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.login-error {
+  margin-bottom: 18px;
+
+  padding: 12px;
+
+  color: #991b1b;
+
+  background: #fee2e2;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 9px;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.login-group {
+  margin-bottom: 18px;
+}
+
+.login-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.login-group input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  color: #0f172a;
+
+  background: white;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition: 0.2s;
+}
+
+.login-group input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.login-submit {
+  width: 100%;
+
+  margin-top: 5px;
+
+  padding: 14px;
+
+  color: white;
+
+  background: #2563eb;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-submit:hover {
+  background: #1d4ed8;
+}
+
+.login-register {
+  margin-top: 22px;
+
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.login-register a {
+  margin-right: 5px;
+
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .login-page {
+    padding: 30px 15px;
+  }
+
+  .login-card {
+    padding: 28px 20px;
+  }
+}
